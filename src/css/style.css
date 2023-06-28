@@ -32,7 +32,7 @@ header {
 }
 
 .header--wrapper > h1 {
-    color: var();
+    color: var(--text-white);
     text-align: center;
     font-family: var(--title-font);
 }
@@ -40,5 +40,39 @@ header {
 .header--wrapper > a > img {
     position: absolute;
     width: 100px;
+}
+
+header > nav {
+    position: absolute;
+    background-color: var(--nav-bg);
+    bottom: 0px;
+    height: 35%;
+    width: 100%;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header > nav > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.3%;
+    transition-duration: 200ms;
+}
+
+header > nav > ul > li:hover {
+    background-color: var(--nav-el-hover);
+    transition-duration: 200ms;
+}
+
+header > nav > ul > li > i {
+    color: var(--text-white)
 }
 
