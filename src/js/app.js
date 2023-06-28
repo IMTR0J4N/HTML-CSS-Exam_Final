@@ -59,6 +59,20 @@ const data = [
     temp_max: "4",
     temp_min: "-3",
   },
+  {
+    title_day: "mar",
+    title_date: "28",
+    icon: "sleet.png",
+    temp_max: "7",
+    temp_min: "0"
+  },
+  {
+    title_day: "mer",
+    title_date: "29",
+    icon: "hazy.png",
+    temp_max: "4",
+    temp_min: "-2"
+  }
 ];
 
 const genNewCard = (day, date, icon, max, min) => {

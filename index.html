@@ -22,21 +22,25 @@
           <li>
             <a href="#">
               <i class="fas fa-cloud-sun fa-xl"></i>
+              <span>prévisions</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fas fa-water fa-xl"></i>
+              <span>mer</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fas fa-mountain fa-xl"></i>
+              <span>montagne</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fas fa-globe-europe fa-xl"></i>
+              <span>climat</span>
             </a>
           </li>
         </ul>
@@ -44,9 +48,9 @@
   </header>
   <main>
     <div class="main--wrapper">
-      <div class="section--wrapper">
+      <hr class="parallax">
         <section id="prevision">
-        <h2>prévision à <strong>8</strong> jours</h2>
+        <h2>prévision à <strong></strong> jours</h2>
       <div class="card--aside-container">
         <ul id="card-list"></ul>
       <aside>
@@ -101,17 +105,69 @@
       </aside>
       </div>
       </section>
+    </div>
+    <div class="mid--main--container">
+      <div class="table--container">
+        <h3>Les relevés du jour</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ville</th>
+              <th>météo</th>
+              <th>min</th>
+              <th>max</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>londres</td>
+              <td>pluvieux</td>
+              <td>9</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>madrid</td>
+              <td>voilé</td>
+              <td>13</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>berlin</td>
+              <td>nuageux</td>
+              <td>8</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>lisbonne</td>
+              <td>ensoleillé</td>
+              <td>13</td>
+              <td>21</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <section class="gallery">
-        <img src="./assets/img/printemps.jpg" alt="Image montrant des arbres en plein pringtemps">
-        <img src="./assets/img/route_ete.jpg" alt="Image montrant une route en plein été">
-        <img src="./assets/img/nuageux.jpg" alt="Image montrant des nuages">
-        <img src="./assets/img/Climadiag.jpg" alt="Image illustrant une analyse du climat">
-        <img src="./assets/img/route_neige.gif" alt="Gif d'une route enneigée">
-        <img src="./assets/img/certif-intemperies.png" alt="Image d'un certificat d'intempéries">
-      </section>
+      <img src="./assets/img/ephemeride.png" alt="Ephéméride de Paris">
+    </div>
+    <div class="bottom--main--container">
+      <div class="gallery">
+      <img src="./assets/img/printemps.jpg" alt="Image montrant des arbres en plein pringtemps">
+      <img src="./assets/img/route_ete.jpg" alt="Image montrant une route en plein été">
+      <img src="./assets/img/nuageux.jpg" alt="Image montrant des nuages">
+      <img src="./assets/img/Climadiag.jpg" alt="Image illustrant une analyse du climat">
+      <img src="./assets/img/route_neige.gif" alt="Gif d'une route enneigée">
+      <img src="./assets/img/certif-intemperies.png" alt="Image d'un certificat d'intempéries"> 
+    </div>
+    <form>
+      <h3>abonnez-vous !</h3>
+      <p>recevez chaque jour les prévisions de votre ville</p>
+      <input type="email" name="email" id="email" placeholder="Votre adresse email">
+      <input type="submit" value="S'ABONNER">
+    </form>
     </div>
   </main>
+  <footer>
+    <small>that’s all folks, nearly finished</small>
+  </footer>
   <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>
