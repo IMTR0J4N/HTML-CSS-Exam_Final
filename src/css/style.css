@@ -6,8 +6,39 @@
     --header-footer-bg: #096d93;
     --main-bg: #4fa3b6;
     --nav-bg: #0e4259;
+    --text-white: #ffffff;
+    --text-light-blue: #30a8f0;
+    --text-red: #ff0202;
+    --text-blue: #096d93;
+    --text-black: #000000;
     --title-font: 'Nosifer', cursive;
     --text-font: 'Quicksand', sans-serif;
     --tablet-bp: 1200px;
     --nav-el-hover: rgba(79, 163, 182, 0.5)
 }
+
+header {
+    position: relative;
+    height: 125px;
+    width: 100%;
+    background-color: var(--header-footer-bg);
+}
+
+.header--wrapper {
+    position: absolute;
+    padding: 10px;
+    height: 65%;
+    width: 100%;
+}
+
+.header--wrapper > h1 {
+    color: var();
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.header--wrapper > a > img {
+    position: absolute;
+    width: 100px;
+}
+
