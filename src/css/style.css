@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Quicksand&display=swap');
+
+:root {
+    --bg-white: #ffffff;
+    --card-bg: #fafafa;
+    --header-footer-bg: #096d93;
+    --main-bg: #4fa3b6;
+    --nav-bg: #0e4259;
+    --text-white: #ffffff;
+    --text-light-blue: #30a8f0;
+    --text-red: #ff0202;
+    --text-blue: #096d93;
+    --text-black: #000000;
+    --title-font: 'Nosifer', cursive;
+    --text-font: 'Quicksand', sans-serif;
+    --tablet-bp: 1200px;
+    --nav-el-hover: rgba(79, 163, 182, 0.5)
+}
+
+header {
+    position: relative;
+    height: 125px;
+    width: 100%;
+    background-color: var(--header-footer-bg);
+}
+
+.header--wrapper {
+    position: absolute;
+    padding: 10px;
+    height: 65%;
+    width: 100%;
+}
+
+.header--wrapper > h1 {
+    color: var(--text-white);
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.header--wrapper > a > img {
+    position: absolute;
+    width: 100px;
+}
+
+header > nav {
+    position: absolute;
+    background-color: var(--nav-bg);
+    bottom: 0px;
+    height: 35%;
+    width: 100%;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+header > nav > ul > li {
+    height: 100%;
+    width: 33.3%;
+}
+
+header > nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition-duration: 200ms;
+}
+
+header > nav > ul > li > a:hover {
+    background-color: var(--nav-el-hover);
+    transition-duration: 200ms;
+}
+
+header > nav > ul > li > a > i {
+    color: var(--text-white)
+}
+
+main {
+    font-family: var(--text-font);
+    background-color: var(--main-bg);
+}
+
+.main--wrapper {
+    padding: 5vh 10vh;
+}
+
+.section--wrapper {
+    position: relative;
+    display: flex;
+}
+
+#prevision {
+    height: 100%;
+    width: 100%;
+}
+
+.section--wrapper > section > h2 {
+    font-weight: bold;
+}
+
+.section--wrapper > section > h2::first-letter {
+    text-transform: uppercase;
+}
+
+.section--wrapper > section > div >  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin-top: 30px;
+    height: 625px;
+    width: 51vw;
+}
+
+.card--aside-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:nth-child(1) {
+     grid-area: 1 / 1 / 2 / 2;
+}
+
+.card:nth-child(2) {
+     grid-area: 1 / 2 / 2 / 3;
+}
+
+.card:nth-child(3) {
+     grid-area: 2 / 1 / 3 / 2;
+}
+
+.card:nth-child(4) {
+     grid-area: 2 / 2 / 3 / 3;
+}
+
+.card:nth-child(5) {
+     grid-area: 3 / 1 / 4 / 2;
+}
+
+.card:nth-child(6) {
+     grid-area: 3 / 2 / 4 / 3;
+}
+
+.card:nth-child(7) {
+     grid-area: 4 / 1 / 5 / 2;
+}
+
+.card:nth-child(8) {
+     grid-area: 4 / 2 / 5 / 3;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 5px;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+    height: 150px;
+    width: 25vw;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-img {
+    width: 70px;
+}
+
+.card-max {
+    color: var(--text-red);
+}
+
+.card-min {
+    color: var(--text-light-blue);
+}
+
+.card-max::after, .card-min::after {
+    content: "°";
+}
+
+.section--wrapper > section > div > aside {
+    background-color: var(--bg-white);
+    width: 22vw;
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+.section--wrapper > section > div > aside > nav > ul > li {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding-left: 2px;
+    color: var(--text-black);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section--wrapper > section > div > aside > nav > ul > li:hover {
+    border-radius: 10px;
+    background-color: var(--nav-el-hover);
+}
+
+.section--wrapper > section > div > aside > nav > ul > li > i {
+    color: var(--header-footer-bg);
+}

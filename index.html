@@ -4,11 +4,114 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <title></title>
+  <meta name="description" content="Site de la chaine météo">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/ece9576daf.js" crossorigin="anonymous"></script>
+  <title>365 Jours au Soleil</title>
 </head>
 <body>
-  
+  <header>
+        <div class="header--wrapper">
+          <a href="lachainemeteo.com" target="_blank">
+            <img src="./assets/img/logo.svg" alt="Logo de la chaine meteo">
+          </a>
+          <h1>365 jours de soleil</h1>
+        </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fas fa-cloud-sun fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-water fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-mountain fa-xl"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-globe-europe fa-xl"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <div class="main--wrapper">
+      <div class="section--wrapper">
+        <section id="prevision">
+        <h2>prévision à <strong>8</strong> jours</h2>
+      <div class="card--aside-container">
+        <ul id="card-list"></ul>
+      <aside>
+        <nav>
+          <ul>
+            <li>
+              <i class="fas fa-exclamation-triangle"></i>
+              vigilance
+            </li>
+            <li>
+              <i class="fas fa-globe-asia"></i>
+              outre-mer
+            </li>
+            <li>
+              <i class="fas fa-globe-americas"></i>
+              climat
+            </li>
+            <li>
+              <i class="fas fa-mountain"></i>
+              montagne
+            </li>
+            <li>
+              <i class="fas fa-water"></i>
+              mer
+            </li>
+            <li>
+              <i class="fas fa-umbrella-beach"></i>
+              plages
+            </li>
+            <li>
+              <i class="fas fa-globe-africa"></i>
+              animations
+            </li>
+            <li>
+              <i class="fas fa-database"></i>
+              open data
+            </li>
+            <li>
+              <i class="fas fa-user-plus"></i>
+              services
+            </li>
+            <li>
+              <i class="fas fa-mobile-alt"></i>
+              mobile
+            </li>
+            <li>
+              <i class="fas fa-user-circle"></i>
+              premium
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      </div>
+      </section>
+      </div>
+      <section class="gallery">
+        <img src="./assets/img/printemps.jpg" alt="Image montrant des arbres en plein pringtemps">
+        <img src="./assets/img/route_ete.jpg" alt="Image montrant une route en plein été">
+        <img src="./assets/img/nuageux.jpg" alt="Image montrant des nuages">
+        <img src="./assets/img/Climadiag.jpg" alt="Image illustrant une analyse du climat">
+        <img src="./assets/img/route_neige.gif" alt="Gif d'une route enneigée">
+        <img src="./assets/img/certif-intemperies.png" alt="Image d'un certificat d'intempéries">
+      </section>
+    </div>
+  </main>
   <script src="./src/js/app.js" type="module"></script>
 </body>
 </html>
