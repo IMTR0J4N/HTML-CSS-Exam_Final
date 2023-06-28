@@ -87,28 +87,25 @@ main {
 }
 
 .main--wrapper {
-    padding: 5vh 10vh;
-}
-
-.section--wrapper {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
+    padding: 5vh 10vh;
 }
-
 #prevision {
     height: 100%;
     width: 100%;
 }
 
-.section--wrapper > section > h2 {
+.main--wrapper > section > h2 {
     font-weight: bold;
 }
 
-.section--wrapper > section > h2::first-letter {
+.main--wrapper > section > h2::first-letter {
     text-transform: uppercase;
 }
 
-.section--wrapper > section > div >  ul {
+.main--wrapper > section > div >  ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -189,7 +186,7 @@ main {
     content: "°";
 }
 
-.section--wrapper > section > div > aside {
+.main--wrapper > section > div > aside {
     background-color: var(--bg-white);
     width: 22vw;
     padding: 30px 15px;
@@ -197,7 +194,7 @@ main {
     box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 }
 
-.section--wrapper > section > div > aside > nav > ul > li {
+.main--wrapper > section > div > aside > nav > ul > li {
     display: flex;
     align-items: center;
     height: 30px;
@@ -208,11 +205,63 @@ main {
     margin-bottom: 25px;
 }
 
-.section--wrapper > section > div > aside > nav > ul > li:hover {
+.main--wrapper > section > div > aside > nav > ul > li:hover {
     border-radius: 10px;
     background-color: var(--nav-el-hover);
 }
 
-.section--wrapper > section > div > aside > nav > ul > li > i {
+.main--wrapper > section > div > aside > nav > ul > li > i {
     color: var(--header-footer-bg);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 320px;
+    gap: 8px;
+    column-gap: 15px;
+}
+
+.gallery > img {
+    width: 15vw;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 250px;
+    width: 35vw;
+    margin-top: 30px;
+    background-color: var(--bg-white);
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+}
+
+form > h3, form > p {
+    color: var(--text-blue);
+    font-weight: bold;
+    text-align: center;
+}
+
+form > h3::first-letter {
+    text-transform: uppercase;
+}
+
+form > input, form > button {
+    border: none;
+    box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
+    width: 95%;
+    height: 30px;
+    border-radius: 10px;
+}
+
+form > button {
+    background-color: var(--main-bg);
+    text-transform: uppercase;
+    font-family: var(--text-font);
+    color: var(--text-white);
 }
