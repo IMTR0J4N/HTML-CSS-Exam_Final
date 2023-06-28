@@ -48,8 +48,9 @@
   </header>
   <main>
     <div class="main--wrapper">
+      <hr class="parallax">
         <section id="prevision">
-        <h2>prévision à <strong>8</strong> jours</h2>
+        <h2>prévision à <strong></strong> jours</h2>
       <div class="card--aside-container">
         <ul id="card-list"></ul>
       <aside>
@@ -102,7 +103,50 @@
           </ul>
         </nav>
       </aside>
+      </div>
       </section>
+    </div>
+    <div class="mid--main--container">
+      <div class="table--container">
+        <h3>Les relevés du jour</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ville</th>
+              <th>météo</th>
+              <th>min</th>
+              <th>max</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>londres</td>
+              <td>pluvieux</td>
+              <td>9</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>madrid</td>
+              <td>voilé</td>
+              <td>13</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>berlin</td>
+              <td>nuageux</td>
+              <td>8</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>lisbonne</td>
+              <td>ensoleillé</td>
+              <td>13</td>
+              <td>21</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <img src="./assets/img/ephemeride.png" alt="Ephéméride de Paris">
     </div>
     <div class="bottom--main--container">
       <div class="gallery">
@@ -117,9 +161,8 @@
       <h3>abonnez-vous !</h3>
       <p>recevez chaque jour les prévisions de votre ville</p>
       <input type="email" name="email" id="email" placeholder="Votre adresse email">
-      <button>s'abonner</button>
+      <input type="submit" value="S'ABONNER">
     </form>
-    </div>
     </div>
   </main>
   <footer>
