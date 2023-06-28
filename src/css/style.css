@@ -81,6 +81,14 @@ header > nav > ul > li > a > i {
     color: var(--text-white)
 }
 
+header > nav > ul > li > a > span {
+    display: none;
+}
+
+.parallax {
+    display: none;
+}
+
 main {
     font-family: var(--text-font);
     background-color: var(--main-bg);
@@ -89,6 +97,7 @@ main {
 .main--wrapper {
     position: relative;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 5vh 10vh;
 }
@@ -99,10 +108,7 @@ main {
 
 .main--wrapper > section > h2 {
     font-weight: bold;
-}
-
-.main--wrapper > section > h2::first-letter {
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .main--wrapper > section > div >  ul {
@@ -183,7 +189,10 @@ main {
 }
 
 .card-max::after, .card-min::after {
+    position: relative;
     content: "°";
+    bottom: 2px;
+    left: 2px;
 }
 
 .main--wrapper > section > div > aside {
@@ -214,11 +223,18 @@ main {
     color: var(--header-footer-bg);
 }
 
+.bottom--main--container {
+    display: flex;
+    padding: 0vh 10vh 10vh 10vh;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
-    width: 320px;
+    width: 40vw;
     gap: 8px;
     column-gap: 15px;
 }
@@ -247,8 +263,8 @@ form > h3, form > p {
     text-align: center;
 }
 
-form > h3::first-letter {
-    text-transform: uppercase;
+form > h3 {
+    text-transform: capitalize;
 }
 
 form > input, form > button {
@@ -279,4 +295,15 @@ footer {
 footer > small {
     font-size: 20px;
     color: var(--text-white);
+}
+
+@media screen and (min-width: 1200px) {
+    header > nav > ul > li > a > span {
+        display: block;
+        text-transform: uppercase;
+        font-family: var(--text-font);
+        font-weight: bold;
+        color: var(--text-white);
+        margin-left: 5px;
+    }
 }
