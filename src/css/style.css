@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Quicksand&display=swap');
+
+:root {
+    --bg-white: #ffffff;
+    --card-bg: #fafafa;
+    --header-footer-bg: #096d93;
+    --main-bg: #4fa3b6;
+    --nav-bg: #0e4259;
+    --title-font: 'Nosifer', cursive;
+    --text-font: 'Quicksand', sans-serif;
+    --tablet-bp: 1200px;
+    --nav-el-hover: rgba(79, 163, 182, 0.5)
+}
