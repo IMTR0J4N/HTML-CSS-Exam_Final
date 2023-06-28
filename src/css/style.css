@@ -265,3 +265,18 @@ form > button {
     font-family: var(--text-font);
     color: var(--text-white);
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-footer-bg);
+    width: 100%;
+    height: 100px;
+    font-family: var(--title-font);
+}
+
+footer > small {
+    font-size: 20px;
+    color: var(--text-white);
+}
