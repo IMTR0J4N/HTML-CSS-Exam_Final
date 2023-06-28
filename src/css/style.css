@@ -87,9 +87,12 @@ main {
 }
 
 .main--wrapper {
+    padding: 5vh 10vh;
+}
+
+.section--wrapper {
     position: relative;
     display: flex;
-    padding: 5vh 10vh;
 }
 
 #prevision {
@@ -97,15 +100,15 @@ main {
     width: 100%;
 }
 
-.main--wrapper > section > h2 {
+.section--wrapper > section > h2 {
     font-weight: bold;
 }
 
-.main--wrapper > section > h2::first-letter {
+.section--wrapper > section > h2::first-letter {
     text-transform: uppercase;
 }
 
-.main--wrapper > section > div >  ul {
+.section--wrapper > section > div >  ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -186,7 +189,7 @@ main {
     content: "°";
 }
 
-.main--wrapper > section > div > aside {
+.section--wrapper > section > div > aside {
     background-color: var(--bg-white);
     width: 22vw;
     padding: 30px 15px;
@@ -194,7 +197,7 @@ main {
     box-shadow: 0 2px 21px 0px rgb(14 66 89 / 45%);
 }
 
-.main--wrapper > section > div > aside > nav > ul > li {
+.section--wrapper > section > div > aside > nav > ul > li {
     display: flex;
     align-items: center;
     height: 30px;
@@ -205,11 +208,11 @@ main {
     margin-bottom: 25px;
 }
 
-.main--wrapper > section > div > aside > nav > ul > li:hover {
+.section--wrapper > section > div > aside > nav > ul > li:hover {
     border-radius: 10px;
     background-color: var(--nav-el-hover);
 }
 
-.main--wrapper > section > div > aside > nav > ul > li > i {
+.section--wrapper > section > div > aside > nav > ul > li > i {
     color: var(--header-footer-bg);
 }
